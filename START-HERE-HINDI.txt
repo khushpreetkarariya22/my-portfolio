@@ -1,0 +1,30 @@
+KHUSHPREET KARARIYA — PURPLE FULL-STACK PORTFOLIO
+=================================================
+
+Ye package aapke pehle wale purple-white-black portfolio ke source se upgrade hua hai.
+Hero me original guitar wali photo hai. Aapki abhi uploaded portrait About me bhi included hai.
+
+VS CODE / WINDOWS 11 ME CHALAYEIN
+
+1. ZIP extract karein, khushpreet_purple_premium folder VS Code me kholein.
+2. Terminal me:
+   npm install
+   Copy-Item .env.example .env
+3. .env me apna MongoDB Atlas MONGODB_URI, randomly generated SESSION_SECRET,
+   ADMIN_EMAIL aur strong ADMIN_PASSWORD bharein. Kisi ko credentials share na karein.
+4. Terminal me:
+   npm run setup:admin
+   npm run seed
+   npm run dev
+5. Browser:
+   Main website: http://localhost:3000
+   Admin panel:  http://localhost:3000/admin/login.html
+   API status:   http://localhost:3000/api/health
+6. Admin me projects, skills, services, messages, hero/About, timeline aur SEO manage karein.
+
+IMPORTANT:
+Sirf HTML open karne se backend/database kaam nahi karta. Real MongoDB
+connection required hai. .env mat upload karein. Deploy karne se pehle npm test
+chalaayein aur real database se sari CRUD/contact/login functions verify karein.
+
+Complete commands, security details aur Render deployment ke liye README.md padhein.

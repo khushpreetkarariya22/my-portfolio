@@ -1,0 +1,20 @@
+KHUSHPREET KARARIYA PORTFOLIO — TEST REPORT
+============================================
+Verification during package creation:
+PASS: All JavaScript source files pass `node --check`.
+PASS: Four dependency-free static source tests.
+PASS: Both supplied portraits are included, and only three requested font families are configured.
+PASS: All requested main-page section IDs and listed API integrations exist.
+PASS: Contact form markup has name/email/subject/project type/optional budget/message fields.
+PASS: HTML contains no duplicate ids.
+PASS: Static HTML responds with HTTP 200 under a temporary local Python static server.
+
+NOT RUN / NOT VERIFIED in this environment:
+- `npm install` could not reach the npm registry (network blocked / timeout).
+- Full `npm test` (which needs Express, MongoDB dependencies).
+- Real Atlas CRUD, real saved contact messages, admin authentication, Cloudinary uploads.
+- Live production deployment, domain or HTTPS configuration.
+- Headless Chromium screenshot/browser interaction (sandbox administrator blocked navigation).
+
+To verify, follow README.md: npm install, .env configuration, npm run setup:admin,
+npm run seed, npm run dev, npm test and manual end-to-end checklist.
